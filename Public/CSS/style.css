@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*.klee-one-regular {
+  font-family: "Klee One", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;*/
+
+/* 
+PALETA DE COLORES:
+ROSA CLARO: #FFE4E1
+ROSA TRASLUCIDO: #ffe4e15d
+ROSA: #FFC5BE
+ROSA OSCURO: #FFA69C
+ROSA RGB: rgba(249, 173, 165)
+GRIS CLARO: #F4F4F4
+GRIS: #D8E2DC
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+/******ESTILO DEL HEADER ********/
+header
+{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    background-color:white;
+    padding: 5px;
+    width: 100%;
+}
+header h1 {
+    font-family:"Montserrat", sans-serif; 
+    font-size: 55px;
+    font-weight: normal;
+}
+.navbarsuperior {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.buscador {
+    border: solid#F4F4F4;
+    border-radius: 15px;
+    padding: 10px;
+    height: 25px;
+}
+.micuentamicarrito ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.micuentamicarrito li {
+    border: solid;
+    border-color:#F4F4F4;
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 15px;
+}
+.micuentamicarrito img {
+    height: 30px;
+    width: 30px;
+}
+.micuentamicarrito li:hover {
+    background-color: white;
+    border-color:#FFC5BE;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+ }
+  @media (max-width:900px) {
+    .header {
+        background-position:center ;
+    }
+  }
+  @media (max-width:900px) {
+    .header h1 {
+        text-align:center;
+    }
+  }
+  @media (max-width:900px) {
+    .navbarsuperior {
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+    }
+  }
+  @media (max-width:900px) {
+    .buscador{
+        padding: 0%;
+        height:auto;
+        width: 100%;
+    }
+  }
+  @media (max-width:900px) {
+    .micuentamicarrito {
+        height: 15px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+
+
+/*estilo de mi carrito*/
+.micarrito {
+    font-family: "Montserrat", sans-serif;
+    border:SOLID #f4f4f4;
+    padding: 15px;
+    margin: 20px 80px ;
+}
+.micarrito a {
+    text-decoration: none;
+    color: #FFA69C;
+    font-weight: bolder;
+
+}
+.micarrito p {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.micarrito h3 {
+    text-align: center;
+}
+@media (max-width:900px) {
+    .micarrito {
+        padding: 5px;
+        margin: auto;
+        text-align: center;
+    }   
+}
+
+/*******ESTILO DE MENU NAVEGADOR******/
+.navbar-flex {
+    background-color:#FFE4E1;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 10px;
+    
+}
+.menudenavegacion { 
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+}
+.menudenavegacion a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 6px 20px;
+}
+.menudeproductos li a {
+    display: block; 
+    text-decoration: none;
+    background-color: #ffe4e15d;
+}
+.menudeproductos li {
+    list-style: none;
+}
+
+.menudenavegacion > li a:hover {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+    
+}
+.menudenavegacion li ul {
+    display: none;
+    position: absolute;
+}
+.menudenavegacion li:hover > ul {
+    display: block;
+}
+
+@media (max-width:900px) {
+    .navbar-flex {
+        background-position:center ;
+        height: auto;
+        background-color:#FFE4E1;
+        position: unset;
+    }
+  }
+@media (max-width:900px) {
+    .menudenavegacion > li a{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+    } 
+}
+@media (max-width:900px) {
+    .menudenavegacion li{
+    margin:5px;
+    } 
+}
+
+@media (max-width:900px) {
+    .menudenavegacion {
+        display: flex;
+        flex-direction: column;
+        position: unset;
+        text-align: center;
+    }
+}
+
+
+/*******ESTILO AL CONTENIDO PRINCIPAL******/
+
+.articulos {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+}
+.articulos h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 15px;
+}
+.articulos img {
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+.article-bijou {
+    background-color: #FFE4E1;
+    border-radius: 10px;
+}
+.article-textil {
+    background-color: #FFE4E1;
+    border-radius: 10px;
+}
+.article-complementos {
+    background-color: #FFE4E1;
+    border-radius: 10px;
+}
+
+.articulos article:hover {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165); 
+}
+.article-bijou:hover {
+    transform: scale(1.02);
+}
+.article-textil:hover {
+    transform: scale(1.02);
+}
+.article-complementos:hover {
+    transform: scale(1.02);
+}
+@media (max-width:900px) {
+    .articulos {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+  }
+  @media (max-width:900px) {
+    .articulos img {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        }
+  }
+  @media (max-width:900px) {
+    .articulos article {
+    position: unset;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+    }
+  }
+
+   /******************ESTILO DE FORMULARIOS**************/
+/*estilo de formulario: contacto*/
+.contacto {
+    padding: 40px;
+    background-color:white;
+    border: solid #D8E2DC;
+    text-align: center;
+    margin: 80px ;
+}
+.contacto h3 {
+    text-align: center;
+    font-weight: bolder;
+
+}
+.contacto label{
+    background-color:#FFE4E1;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contacto input {
+    border: solid 2px #D8E2DC;
+    border-radius: 10px;
+    text-align: center;
+}
+.contacto input:hover {
+    border: none;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+    
+}
+.contacto textarea {
+    border: solid 2px #D8E2DC;
+    border-radius: 10px;
+    text-align: center;
+}
+.contacto textarea:hover {
+    border: none;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+    }
+.contacto fieldset{
+    display: grid;
+    grid-template-columns:30vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 5px #FFE4E1;
+}
+.enviar {
+    padding: 10px;
+    margin:20px;
+    border-radius: 10px;
+    border: none;
+}
+iframe {
+    width: 60%;
+}
+
+@media (max-width:900px) {
+    .contacto fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }   
+}
+@media (max-width:900px) {
+    .contacto {
+        padding: 5px;
+        margin: auto;
+        
+    }   
+}
+
+/*estilo de formulario: iniciar sesion*/
+.iniciarsesion {
+    padding: 40px;
+    background-color:white;
+    border: solid #D8E2DC;
+    text-align: center;
+    margin: 20px 80px ;
+}
+.iniciarsesion label{
+    background-color:#FFE4E1;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.iniciarsesion fieldset{
+    display: grid;
+    grid-template-columns:30vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 5px #FFE4E1;
+}
+.iniciarsesion input {
+    border: solid 2px #D8E2DC;
+    border-radius: 10px;
+    text-align: center;
+}
+.iniciarsesion input:hover {
+    border: none;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+    
+}
+
+.iniciarsesion legend {
+    text-align:end;
+    font-weight: bolder;
+    padding: 15px;
+}
+.iniciarsesion a {
+    text-decoration: none;
+    color: #FFA69C;
+    font-weight: bolder;
+}
+@media (max-width:900px) {
+    .iniciarsesion {
+        padding: 5px;
+        margin: auto;
+        
+    }   
+}
+
+@media (max-width:900px) {
+    .iniciarsesion fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }   
+}
+@media (max-width:900px) {
+    .iniciarsesion label {
+
+    }
+    
+}
+@media (max-width:900px) {
+    .iniciarsesion legend {
+   text-align: center;
+   padding-bottom: 1px;
+   margin-bottom: 0%;
+    }   
+}
+
+/*estilo de formulario: registrarme*/
+.registrarme {
+    padding: 40px;
+    background-color:white;
+    border: solid #D8E2DC;
+    text-align: center;
+    margin: 20px 80px ;
+}
+.registrarme label{
+    background-color:#FFE4E1;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.registrarme fieldset{
+    display: grid;
+    grid-template-columns:30vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 5px #FFE4E1;
+}
+.registrarme input {
+    border: solid 2px #D8E2DC;
+    border-radius: 10px;
+    text-align: center;
+}
+.registrarme input:hover {
+    border: none;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+    
+}
+
+.registrarme legend {
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px;
+}
+@media (max-width:900px) {
+    .registrarme {
+        position: unset;
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        margin: auto;
+
+    }   
+}
+@media (max-width:900px) {
+    .registrarme fieldset {
+        display: flex;
+        flex-direction: column;
+    }   
+}
+
+/*ESTILO DE QUIENES SOMOS*/
+.quienessomos {
+    font-family: "Montserrat", sans-serif;
+    border: solid #D8E2DC;
+    padding: 15px;
+    margin:80px ;
+    
+}
+.quienessomos p {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.quienessomos h4 {
+    text-align: center;
+}
+@media (max-width:900px) {
+    .quienessomos {
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+    }   
+}
+
+/*ESTILO DE CÓMO COMPRAR*/
+.comocomprar {
+    font-family: "Montserrat", sans-serif;
+    border: solid #D8E2DC;
+    padding: 15px;
+    margin:80px ;
+}
+.comocomprar h3 {
+    text-align: center;  
+}
+.comocomprar p {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+@media (max-width:900px) {
+    .comocomprar {
+        padding: 5px;
+        margin: auto;
+        
+    }   
+}
+
+/*************ESTILO DE PRODUCTOS*****************/
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+.card-link {
+    color: black; 
+}
+.card-link:hover {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(249, 173, 165);
+    }
+
+   /*BIJOU*/
+.bijou {
+    font-family:"Montserrat", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding: 46px; 
+}
+.bijou a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+@media (max-width:900px) {
+    .bijou {
+    flex-direction: column;
+    align-items: center;
+    position: unset;
+    text-align: center;
+    padding: 0;
+    }   
+}
+    /*TEXTIL*/
+.textil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding: 46px;
+}
+.textil a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.art-textil {
+    width: 300px;
+    border: solid #FFE4E1;
+    padding: 10px; 
+    margin: 4px;
+}
+
+@media (max-width:900px) {
+    .textil {
+    flex-direction: column;
+    align-items: center;
+    position: unset;
+    text-align: center;
+    padding: 0;
+    }   
+}
+   /*COMPLEMENTOS*/
+.complementos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding: 46px;
+}
+.complementos a {
+    text-decoration: none;
+    padding: 5px;
+    }
+
+@media (max-width:900px) {
+    .complementos {
+    flex-direction: column;
+    align-items: center;
+    position: unset;
+    text-align: center;
+    padding: 0;
+    }   
+}
+
+/*********ESTILO DE FOOTER*********/
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color:#F4F4F4;
+    color: black;
+    margin-top: 20px;
+    height: 100vh;
+
+}
